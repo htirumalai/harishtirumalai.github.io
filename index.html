@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harish Tirumalai | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#home" class="logo">Harish Tirumalai</a>
+            <ul class="nav-links">
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#resume">Resume</a></li> 
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Hi, I'm Harish Tirumalai</h1>
+                <p class="subtitle">I am a fourth-year Computer Science student at Georgia Tech, specializing in Theory and Intelligence with a minor in Physics. This past summer, I worked as a Machine Learning Intern at the Georgia Tech Research Institute (GTRI), where I developed tools to visualize detection algorithm outputs. I am continuing this internship while also contributing to a research project focused on performance optimization. Outside of academics, I enjoy playing volleyball, watching football, sharpening my problem-solving skills with LeetCode and doing research in quantum computing.</p>
+                <div class="social-links">
+                    <a href="https://github.com/htirumalai" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/htirumalai" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:htjobs72@gmail.com"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="IMG_6116.jpeg">
+            </div>
+        </section>
+
+        <section id="skills" class="skills-section">
+            <h2>My Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Front End</h3>
+                    <p>Angular, HTML, JavaScript, React</p>
+                </div>
+                <div class="skill-category">
+                    <h3>Back End</h3>
+                    <p>Java, Python, C/C++, SQL, Linux</p>
+                </div>
+                <div class="skill-category">
+                    <h3>Developer Tools</h3>
+                    <p>Github, Gitlab, Docker, VS Code, Xcode, PyCharm, IntelliJ</p>
+                </div>
+                <div class="skill-category">
+                    <h3>Libraries</h3>
+                    <p>Scipy, Pandas, NumPy, SciKit, PyTorch, TensorFlow, Hugging Face Transformers, Matplotlib, DEAP, Streamlit</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="resume-section">
+            <h2>Experiences</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Georgia Tech Research Institute</h3>
+                        <span class="timeline-date">May 2025 – Present</span>
+                        <p class="timeline-subtitle">Machine Learning Intern</p>
+                        <ul>
+                            <li>Enabled 100% visual validation of a detection algorithm by parsing raw protobuf streams & render the resulting detections.</li>
+                            <li>Automated ≥80% of manual annotation by implementing a local search algorithm for label propagation across frames.</li>
+                            <li>Integrated Point Cloud Models into an LLM Guided Evolution framework cited by Google DeepMind's AlphaEvolve.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Automated Algorithm Design</h3>
+                        <span class="timeline-date">January 2024 – May 2025</span>
+                        <p class="timeline-subtitle">Genetic Programming Research</p>
+                         <ul>
+                            <li>Utilized an LLM-guided evolution (LLMGE) framework that iteratively improves model performance by creating 32 augmented architectures of the existing model through automated code generation, identifying and merging the most effective components through crossover, resulting in higher detection performance than the baseline model.</li>
+                            <li>Segmented the model architecture into interpretable components for LLM-driven augmentation, and restructured the training pipeline to iteratively evaluate generated architectures for improved performance.</li>
+                            <li>Implemented error handling methods in LLMGE to catch invalid architecture creations, padding created individuals with duplicates of themselves if minimum number of individuals is not met, and created a server that locates, loads, initializes, and exposes locally stored LLMs as an accessible service for iterative model augmentation.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="projects" class="projects-section">
+             <h2>Projects</h2>
+             <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Enhanced Image Annotation Tool</h3>
+                    <p>Overhauled the streamlit-image-label library with core features like bounding box creation, multi-deletion, and labeling. Streamlined the annotation workflow with key UX features and modernized the data pipeline.</p>
+                </div>
+                <div class="project-card">
+                    <h3>HumTune AI</h3>
+                    <p>Developed an ML based music recognition system achieving 95.2% accuracy in matching hummed melodies to songs by implementing a Convolutional Neural Network trained on sine wave representations of audio.</p>
+                </div>
+                 <div class="project-card">
+                    <h3>GT Solar Racing</h3>
+                    <p>Developed a GPS-based curve detection algorithm leveraging a sliding window technique and vector mathematics to calculate angles between consecutive track segments, precisely identifying and highlighting significant sharp curves to optimize vehicle speeds and enhance race performance with a curve detection accuracy of 91.3%.</p>
+                </div>
+             </div>
+        </section>
+
+        <section id="resume" class="resume-viewer-section">
+            <h2>My Resume</h2>
+            <div class="pdf-viewer-container">
+                <iframe src="Harish_Tirumalai_Resume.pdf" title="Harish Tirumalai's Resume Viewer"></iframe>
+            </div>
+            <div class="resume-download-link">
+                <a href="Harish_Tirumalai_Resume.pdf" download="Harish_Tirumalai_Resume.pdf" class="contact-button">
+                    <i class="fas fa-download"></i> Download Resume
+                </a>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h2>Contact Me</h2>
+            <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.</p>
+            
+            <div class="contact-actions">
+                <a href="Harish_Tirumalai_Resume.pdf" download="Harish_Tirumalai_Resume.pdf" class="contact-button">
+                    <i class="fas fa-download"></i> Download Resume
+                </a>
+                
+                <a href="mailto:htjobs72@gmail.com" class="contact-button">
+                    <i class="fas fa-envelope"></i> Email
+                </a>
+                <a href="tel:678-862-4925" class="contact-button">
+                    <i class="fas fa-phone"></i> Phone
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>by Harish Tirumalai</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
