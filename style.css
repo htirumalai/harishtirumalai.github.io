@@ -163,19 +163,41 @@ section {
 
 .timeline {
     position: relative;
-    padding-left: 2rem;
+    padding-left: 5rem; /* Increased padding to make room for the dot + line */
     border-left: 2px solid var(--border-color);
 }
 
 .timeline-item {
     position: relative;
     margin-bottom: 3rem;
+    display: flex; /* Use flexbox to align image and content */
+    align-items: flex-start; /* Align items to the top */
+    gap: 1.5rem; /* Space between image and content */
+}
+
+/* NEW: Style for the image container */
+.timeline-image {
+    flex: 0 0 60px; /* Do not grow, do not shrink, base width of 60px */
+    width: 60px;
+    height: 60px;
+    background-color: #fff; /* Optional: background for non-transparent logos */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Ensures image stays within the circle */
+}
+
+/* NEW: Style for the image itself */
+.timeline-image img {
+    width: 100%;
+    height: auto;
 }
 
 .timeline-dot {
     position: absolute;
-    left: -2.6rem;
-    top: 5px;
+    left: -5.6rem; /* Adjusted position to align with the new padding */
+    top: 22px; /* Fine-tune vertical alignment */
     width: 16px;
     height: 16px;
     background-color: var(--accent-color);
@@ -227,6 +249,11 @@ section {
     border-radius: 8px;
     border: 1px solid var(--border-color);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+    /* --- ADD THESE THREE LINES --- */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .project-card:hover {
@@ -237,6 +264,12 @@ section {
 .project-card h3 {
     color: var(--accent-color);
     margin-bottom: 1rem;
+}
+
+.project-link {
+    text-decoration: none;
+    color: inherit; /* Inherits the text color from the body */
+    display: block; /* Ensures the link takes up the full grid space */
 }
 
 .resume-viewer-section {

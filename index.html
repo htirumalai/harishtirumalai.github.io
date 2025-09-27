@@ -64,6 +64,9 @@
             <h2>Experiences</h2>
             <div class="timeline">
                 <div class="timeline-item">
+                    <div class="timeline-image">
+                        <img src="gtri_logo.jpg" alt="Georgia Tech Research Institute Logo">
+                    </div>
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
                         <h3>Georgia Tech Research Institute</h3>
@@ -77,12 +80,15 @@
                     </div>
                 </div>
                 <div class="timeline-item">
+                    <div class="timeline-image">
+                        <img src="AAD_photo.jpeg" alt="Georgia Tech Logo">
+                    </div>
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
                         <h3>Automated Algorithm Design</h3>
                         <span class="timeline-date">January 2024 – May 2025</span>
                         <p class="timeline-subtitle">Genetic Programming Research</p>
-                         <ul>
+                        <ul>
                             <li>Utilized an LLM-guided evolution (LLMGE) framework that iteratively improves model performance by creating 32 augmented architectures of the existing model through automated code generation, identifying and merging the most effective components through crossover, resulting in higher detection performance than the baseline model.</li>
                             <li>Segmented the model architecture into interpretable components for LLM-driven augmentation, and restructured the training pipeline to iteratively evaluate generated architectures for improved performance.</li>
                             <li>Implemented error handling methods in LLMGE to catch invalid architecture creations, padding created individuals with duplicates of themselves if minimum number of individuals is not met, and created a server that locates, loads, initializes, and exposes locally stored LLMs as an accessible service for iterative model augmentation.</li>
@@ -93,21 +99,29 @@
         </section>
         
         <section id="projects" class="projects-section">
-             <h2>Projects</h2>
-             <div class="projects-grid">
-                <div class="project-card">
-                    <h3>Enhanced Image Annotation Tool</h3>
-                    <p>Overhauled the streamlit-image-label library with core features like bounding box creation, multi-deletion, and labeling. Streamlined the annotation workflow with key UX features and modernized the data pipeline.</p>
-                </div>
-                <div class="project-card">
-                    <h3>HumTune AI</h3>
-                    <p>Developed an ML based music recognition system achieving 95.2% accuracy in matching hummed melodies to songs by implementing a Convolutional Neural Network trained on sine wave representations of audio.</p>
-                </div>
-                 <div class="project-card">
-                    <h3>GT Solar Racing</h3>
-                    <p>Developed a GPS-based curve detection algorithm leveraging a sliding window technique and vector mathematics to calculate angles between consecutive track segments, precisely identifying and highlighting significant sharp curves to optimize vehicle speeds and enhance race performance with a curve detection accuracy of 91.3%.</p>
-                </div>
-             </div>
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <a href="https://github.com/htirumalai/streamlit-img-label-fork" target="_blank" class="project-link">
+                    <div class="project-card">
+                        <h3>Enhanced Image Annotation Tool</h3>
+                        <p>Overhauled the streamlit-image-label library with core features like bounding box creation, multi-deletion, and labeling. Streamlined the annotation workflow with key UX features and modernized the data pipeline.</p>
+                    </div>
+                </a>
+
+                <a href="https://github.com/krish-shar/music-recognition-ml" target="_blank" class="project-link">
+                    <div class="project-card">
+                        <h3>HumTune AI</h3>
+                        <p>Developed an ML based music recognition system achieving 95.2% accuracy in matching hummed melodies to songs by implementing a Convolutional Neural Network trained on sine wave representations of audio.</p>
+                    </div>
+                </a>
+
+                <a href="https://github.gatech.edu/GTSR/MOVSRSim" target="_blank" class="project-link">
+                    <div class="project-card">
+                        <h3>GT Solar Racing</h3>
+                        <p>Developed a GPS-based curve detection algorithm leveraging a sliding window technique and vector mathematics to calculate angles between consecutive track segments, precisely identifying and highlighting significant sharp curves to optimize vehicle speeds and enhance race performance with a curve detection accuracy of 91.3%.</p>
+                    </div>
+                </a>
+            </div>
         </section>
 
         <section id="resume" class="resume-viewer-section">
